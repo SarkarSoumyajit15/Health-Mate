@@ -56,7 +56,7 @@ export default function LoginPage() {
       dispatch(loadingActions.unsetLoading());
     }
   }
-"D:\Soumyajit Sarkar\medical_background_image.jpg"
+// "D:\Soumyajit Sarkar\medical_background_image.jpg"
   return (
 <div className=" bg-login-bg bg-cover bg-center overflow-hidden ">
 

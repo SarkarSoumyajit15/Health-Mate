@@ -59,26 +59,6 @@ const doctorSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    chamberLocations: [
-      {
-        addressLine1: {
-          type: String,
-          required: true,
-        },
-        addressLine2: {
-          type: String,
-          required: true,
-        },
-        city: {
-          type: String,
-          required: true,
-        },
-        state: {
-          type: String,
-          required: true,
-        },
-      },
-    ],
   },
   {
     timestamps: true,
