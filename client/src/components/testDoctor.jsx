@@ -9,6 +9,7 @@ import MyFileDragger from "./myFileDragger";
 
 function TestDoctor() {
   const { currentDoctor } = useSelector((state) => state.doctor);
+  console.log(currentDoctor);
 
   const { doctorId } = useParams();
   const [chambers, setChambers] = useState([]);
@@ -220,7 +221,7 @@ function TestDoctor() {
       <div className=" flex justify-between bg-white p-4 rounded-lg shadow-md mb-6">
         <div className="flex flex-col md:flex-row items-center gap-4 ">
           <img
-            src="https://via.placeholder.com/150" // Replace with actual doctor image URL
+            src={currentDoctor.profileImage} // Replace with actual doctor image URL
             alt="Doctor"
             className="w-32 h-32 rounded-full object-cover"
           />

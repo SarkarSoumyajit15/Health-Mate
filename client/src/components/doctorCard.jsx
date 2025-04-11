@@ -24,8 +24,7 @@ const DoctorCard = ({ doctor }) => {
         )}
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">
-            {doctor.firstname}
-            {doctor.lastname}
+            {doctor.firstname} {doctor.lastname}
           </div>
           <p className="text-gray-700 text-base">{doctor.specialization}</p>
         </div>
